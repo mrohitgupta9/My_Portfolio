@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mrohitgupta9 - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text">
+            Loading<span class="loading-dots">...</span>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">MG</div>
+                <span>mrohitgupta9</span>
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                    <span id="themeText">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-icons">
+            <i class="fas fa-code floating-icon"></i>
+            <i class="fas fa-laptop-code floating-icon"></i>
+            <i class="fas fa-database floating-icon"></i>
+            <i class="fas fa-mobile-alt floating-icon"></i>
+        </div>
+        <div class="hero-content">
+            <div class="hero-greeting">Hi there! 👋</div>
+            <h1>mrohitgupta9</h1>
+            <div class="role">Full Stack Developer</div>
+            <p class="pitch">Building seamless and responsive web experiences with modern technologies.</p>
+            <p class="description">I enjoy solving complex technical problems and creating digital solutions that make a real impact. Passionate about clean code, innovative design, and delivering exceptional user experiences.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> View Resume
+                </a>
+                <a href="#contact" class="btn">
+                    <i class="fas fa-envelope"></i> Let's Connect
+                </a>
+                <a href="#projects" class="btn">
+                    <i class="fas fa-eye"></i> View Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Rohit, a passionate Full Stack Developer with a love for creating digital experiences that make a difference. <span class="typing-text" id="typingText"></span></p>
+                <p>I specialize in building modern web applications using cutting-edge technologies. My journey in web development started with curiosity and has evolved into a passion for solving complex problems through elegant code.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+            </div>
+            <div class="profile-card">
+                <img src= "assets/Rohit1.jpg" alt="mrohitgupta9" class="profile-img">
+                <h3>Rohit Gupta</h3>
+                <p>@mrohitgupta9</p>
+                <div class="tech-icons">
+                    <i class="fab fa-html5 tech-icon" title="HTML5"></i>
+                    <i class="fab fa-css3-alt tech-icon" title="CSS3"></i>
+                    <i class="fab fa-js-square tech-icon" title="JavaScript"></i>
+                    <i class="fab fa-react tech-icon" title="React"></i>
+                    <i class="fab fa-node-js tech-icon" title="Node.js"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML/CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Vue.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Node.js</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>MongoDB</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PostgreSQL</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Git/GitHub</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Docker</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>AWS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Figma</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom web applications built with modern frameworks and technologies for optimal performance and user experience.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Development</h3>
+                <p>Responsive mobile applications and progressive web apps that work seamlessly across all devices and platforms.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Robust server-side solutions with secure APIs, database design, and scalable architecture for your applications.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>User-centered design solutions that combine aesthetics with functionality to create engaging digital experiences.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Solutions</h3>
+                <p>Cloud deployment and DevOps services to ensure your applications are scalable, secure, and highly available.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Consulting</h3>
+                <p>Technical consulting and code reviews to help optimize your existing projects and implement best practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                    A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard. Built with modern technologies for optimal performance.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">
+                    A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Weather Dashboard</h3>
+                <p class="project-description">
+                    An interactive weather dashboard with location-based forecasts, historical data visualization, and responsive design for all devices.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Weather API</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-description">
+                    A responsive portfolio website showcasing projects and skills with smooth animations, dark mode toggle, and optimized performance.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GSAP</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Blog Platform</h3>
+                <p class="project-description">
+                    A modern blog platform with content management system, user authentication, and SEO optimization for better search visibility.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Prisma</span>
+                    <span class="tech-tag">NextAuth</span>
+                    <span class="tech-tag">Tailwind</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Chat Application</h3>
+                <p class="project-description">
+                    Real-time chat application with private messaging, group chats, file sharing, and emoji support for seamless communication.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Redis</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Preview</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="fade-in">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>AWS Certified Developer</h3>
+                <p>Associate Level Certification</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Tech Mentor</h3>
+                <p>Helping Junior Developers</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h3>Google Cloud Professional</h3>
+                <p>Cloud Developer Certification</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>React Developer Expert</h3>
+                <p>Meta Professional Certificate</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>50+ Projects Completed</h3>
+                <p>Successful Client Deliveries</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h3>Google Cloud Professional</h3>
+                <p>Cloud Developer Certification</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>Open Source Contributor</h3>
+                <p>Active in Developer Community</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Tech Mentor</h3>
+                <p>Helping Junior Developers</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <div class="footer-logo-icon">MG</div>
+                        <span>mrohitgupta9</span>
+                    </a>
+                    <p class="footer-text">
+                        Passionate Full Stack Developer creating innovative digital solutions. 
+                        Let's build something amazing together!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/mrohitgupta9" class="social-link" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mrohitgupta9" class="social-link" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/mrohitgupta9" class="social-link" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/mrohitgupta9" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://dribbble.com/mrohitgupta9" class="social-link" target="_blank" title="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:rohit@mrohitgupta9.dev">rohit@mrohitgupta9.dev</a></li>
+                        <li><a href="tel:+919876543210">+91 9580379623</a></li>
+                        <li><a href="#contact">Kushinagar Uttar Pradesh, India</a></li>
+                        <li><a href="#contact">Available for Remote Work</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 mrohitgupta9. All rights reserved. Built with ❤️ and lots of ☕</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+<script src="script.js"></script>
+</html>
